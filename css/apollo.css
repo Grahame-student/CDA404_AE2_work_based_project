@@ -15,6 +15,13 @@
     background-size: 100% 100%;
 }
 
+@media (max-width: 1023px) {
+    #apollo-header {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+}
+
 #sign-in {
     display: flex;
     flex-direction: row-reverse;
@@ -22,8 +29,8 @@
 
 #sign-in a {
     margin-right: 12%;
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
     color: var(--colour-primary);
     text-transform: uppercase;
     font-size: x-small;
@@ -53,7 +60,23 @@
     background-color: var(--colour-primary);    
 }
 
+#apollo-hamburger {
+    display: inline;
+}
+
+#apollo-hamburger img {
+    max-width: 5%;
+}
+
+/* Hide the hamburger menu if we are in desktop mode */
+@media (min-width: 1024px) {
+    #apollo-hamburger {
+        display: none;
+    }
+}
+
 #site-home {
+    display: inline;
     background-color: var(--colour-primary);
 }
 
