@@ -1,0 +1,106 @@
+/* Common styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", "open sans";
+
+    --colour-primary:   white;
+    --colour-secondary: red;
+}
+
+/* Apollo page header - Start */
+#apollo-header {
+    background-image: url("../images/dark-smoke.jpg");
+    background-size: cover;
+}
+
+#sign-in {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#sign-in a {
+    margin-right: 12%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--colour-primary);
+    text-transform: uppercase;
+    font-size: small;
+    text-decoration: none;
+}
+
+#sign-in a:hover {
+    text-decoration: underline;
+}
+
+/* Hide sign-in link for mobile / compact view */
+@media (max-width: 1023px) {
+    #sign-in {
+        display: none;
+    }
+}
+
+#apollo-bar {
+    background-color: var(--colour-secondary);
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50%;
+}
+
+#apollo-bar-items {
+    background-color: var(--colour-primary);    
+}
+
+#site-home {
+    margin-left: 4px;
+    background-color: var(--colour-primary);
+}
+
+#site-home img {
+    max-width: 10%;
+}
+
+/* Breadcrumb styling adapted from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+/* Style the list */
+ul.breadcrumb {
+    margin-left: 10%;
+    padding-right: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: small;    
+    text-transform: uppercase;
+    color: var(--colour-primary);
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+} 
+
+/* Hide breadcrumbs when in mobile / compact view */
+@media (max-width: 1023px) {
+    .breadcrumb {
+        display: none;
+    }
+}
+/* Apollo page header - End */
