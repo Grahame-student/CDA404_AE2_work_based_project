@@ -12,7 +12,7 @@
 /* Apollo page header - Start */
 #apollo-header {
     background-image: url("../images/dark-smoke.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 #sign-in {
@@ -26,7 +26,7 @@
     margin-bottom: 20px;
     color: var(--colour-primary);
     text-transform: uppercase;
-    font-size: small;
+    font-size: x-small;
     text-decoration: none;
 }
 
@@ -49,11 +49,11 @@
 }
 
 #apollo-bar-items {
+    margin-left: 4px;
     background-color: var(--colour-primary);    
 }
 
 #site-home {
-    margin-left: 4px;
     background-color: var(--colour-primary);
 }
 
@@ -61,7 +61,10 @@
     max-width: 10%;
 }
 
-/* Breadcrumb styling adapted from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+/* 
+ * Breadcrumb styling adapted from
+ * https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
+ */
 /* Style the list */
 ul.breadcrumb {
     margin-left: 10%;
@@ -74,7 +77,8 @@ ul.breadcrumb {
 /* Display list items side by side */
 ul.breadcrumb li {
     display: inline;
-    font-size: small;    
+    font-size: small;
+    font-weight: lighter;
     text-transform: uppercase;
     color: var(--colour-primary);
 }
@@ -88,7 +92,7 @@ ul.breadcrumb li+li:before {
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
     color: inherit;
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
 }
 
