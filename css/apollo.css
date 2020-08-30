@@ -5,9 +5,11 @@
     padding: 0;
     font-family: "roboto", "open sans";
 
-    --colour-primary:   white;
-    --colour-secondary: red;
-    --colour-tertiary:  black;
+    --colour-1st: white;
+    --colour-2nd: red;
+    --colour-3rd: black;
+    --colour-4th: darkblue;
+    --colour-5th: gray;
 }
 
 /* Apollo page header - Start */
@@ -33,7 +35,7 @@
     margin-right: 12%;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: var(--colour-primary);
+    color: var(--colour-1st);
     text-transform: uppercase;
     font-size: smaller;
     text-decoration: none;
@@ -53,7 +55,7 @@
 
 /* Apollo bar - Start */
 #apollo-bar {
-    background-color: var(--colour-secondary);
+    background-color: var(--colour-2nd);
     margin-left: 10%;
     margin-right: 10%;
     height: 50%;
@@ -64,7 +66,7 @@
     flex-direction: row;
     align-items: stretch;
     margin-left: 4px;
-    background-color: var(--colour-primary);    
+    background-color: var(--colour-1st);    
 }
 
 /* Hamburger menu - Start */
@@ -90,7 +92,7 @@
     display: flex;
     align-items: center;
     max-width: 8%;
-    background-color: var(--colour-primary);
+    background-color: var(--colour-1st);
 }
 
 #site-home img {
@@ -113,7 +115,7 @@
 #nav-menu li {
     display: inline-block;
     padding: 20px;
-    color: var(--colour-tertiary);
+    color: var(--colour-3rd);
     font-size: smaller;
     font-weight: bold;
     text-transform: uppercase;
@@ -137,7 +139,7 @@
     align-items: center;
     margin-left: auto;
     max-width: 6%;
-    background-color: var(--colour-secondary);
+    background-color: var(--colour-2nd);
 }
 
 #my-apollo img {
@@ -167,10 +169,10 @@ ul.breadcrumb li {
     font-size: small;
     font-weight: lighter;
     text-transform: uppercase;
-    color: var(--colour-primary);
+    color: var(--colour-1st);
 }
 
-/* Add a slash symbol (/) before/behind each list item */
+/* Add a slash symbol (/) between each list item */
 ul.breadcrumb li+li:before {
     padding: 8px;
     content: "/\00a0";
@@ -196,3 +198,35 @@ ul.breadcrumb li a:hover {
 }
 /* Breadcrumbs - End */
 /* Apollo page header - End */
+
+
+/* Main Content - Start */
+/* Main Content - End */
+
+
+/* Apollo page footer - Start */
+
+/* Company Details - Start */
+#company-details {
+    color: var(--colour-5th);
+    font-size: smaller;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#company-details div {
+    display: inline-block;
+}
+
+#company-details p {
+    display: inline;
+}
+
+#company-details p+p {
+    padding:8px;
+}
+
+/* Company Details - End */
+/* Apollo page footer - End */
