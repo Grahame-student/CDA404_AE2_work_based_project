@@ -206,8 +206,26 @@ ul.breadcrumb li a:hover {
 
 /* Apollo page footer - Start */
 
-/* */
-/* */
+/* affiliations - Start */
+#affiliations {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#affiliations section {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#affiliations img {
+    max-width: 50%;
+}
+
+/* affiliations - End */
 
 /* Company Details - Start */
 #company-details {
@@ -215,7 +233,7 @@ ul.breadcrumb li a:hover {
     font-size: smaller;
     width: 100%;
     text-align: center;
-    border-top: var(--colour-3th) 1px solid;
+    border-top: 0.5px solid var(--colour-5th);
     padding-top: 20px;
     padding-bottom: 20px;
 }
