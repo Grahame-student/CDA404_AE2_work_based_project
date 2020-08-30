@@ -8,8 +8,9 @@
     --colour-1st: white;
     --colour-2nd: red;
     --colour-3rd: black;
-    --colour-4th: darkblue;
+    --colour-4th: #1F375C; /* Dark blue*/
     --colour-5th: gray;
+    --colour-6th: #152640; /* Slightly lighter dark blue */
 }
 
 /* Apollo page header - Start */
@@ -215,6 +216,44 @@ ul.breadcrumb li a:hover {
 
 
 /* Apollo page footer - Start */
+/* Footer-Company - Start */
+#footer-company {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 56px;
+    background-image: linear-gradient(var(--colour-4th), var(--colour-6th));
+    color: var(--colour-1st);
+    border-top: 4px solid var(--colour-2nd);
+}
+
+#footer-company section+section {
+    padding-left: 16px;
+}
+
+#footer-company h2 {
+    padding-bottom: 16px;
+}
+
+#footer-company ul {
+    list-style: none;
+}
+
+#footer-company li+li {
+    padding-top: 4px;
+}
+
+#footer-company a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Newsletter - Start */
+#newsletter {
+}
+/* Footer-Company - End */
 
 /* affiliations - Start */
 #affiliations {
@@ -246,7 +285,6 @@ ul.breadcrumb li a:hover {
         text-align: center;
     }
 }
-
 /* affiliations - End */
 
 /* Company Details - Start */
