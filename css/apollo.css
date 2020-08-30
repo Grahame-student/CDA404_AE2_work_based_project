@@ -206,12 +206,16 @@ ul.breadcrumb li a:hover {
 
 /* Apollo page footer - Start */
 
+/* */
+/* */
+
 /* Company Details - Start */
 #company-details {
     color: var(--colour-5th);
     font-size: smaller;
     width: 100%;
     text-align: center;
+    border-top: var(--colour-3th) 1px solid;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -228,5 +232,14 @@ ul.breadcrumb li a:hover {
     padding:8px;
 }
 
+#company-details a {
+    color: var(--colour-4th);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#company-details a:hover {
+    text-decoration: underline;
+}
 /* Company Details - End */
 /* Apollo page footer - End */
