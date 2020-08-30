@@ -251,7 +251,22 @@ ul.breadcrumb li a:hover {
 }
 
 /* Newsletter - Start */
-#newsletter {
+#newsletter input {
+    padding: 4px;
+}
+
+#newsletter input[type=submit] {
+    border: 2px solid #55657F;
+    color: #55657F;
+    font-weight: bold;
+    background: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+#newsletter input[type=submit]:hover {
+    border: 2px solid var(--colour-1st);
+    color: var(--colour-1st);    
 }
 /* Footer-Company - End */
 

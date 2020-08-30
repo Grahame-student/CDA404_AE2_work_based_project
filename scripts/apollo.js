@@ -1,15 +1,19 @@
 function setupEvents()
 {
-    document.getElementById("site-search").addEventListener("submit", validate);
+    document.getElementById("newsletter-subscribe").addEventListener("submit", validate);
 }
 
 function validate(e)
 {
-    const site_search = document.getElementById("site-search");
+    const newsletter_subscribe = document.getElementById("newsletter-subscribe");
 
-    if(site_search.search_text == "")
+    if(newsletter_subscribe.email_address.value == "")
     {
-        console.log("Nope");
+        console.log("No email address supplied");
         e.preventDefault();
+    }
+    else
+    {
+        console.log("email field populated, submitting form");        
     }
 }
