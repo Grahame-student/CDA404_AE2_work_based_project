@@ -35,7 +35,7 @@
     margin-top: 20px;
     color: var(--colour-primary);
     text-transform: uppercase;
-    font-size: x-small;
+    font-size: smaller;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@
 #apollo-bar-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     margin-left: 4px;
     background-color: var(--colour-primary);    
 }
@@ -87,7 +87,8 @@
 /* Site-home - Start */
 /* TODO: change position in mobile view */
 #site-home {
-    display: inline;
+    display: flex;
+    align-items: center;
     max-width: 8%;
     background-color: var(--colour-primary);
 }
@@ -103,7 +104,8 @@
 }
 
 #nav-menu ul {
-    display: inline;
+    display: flex;
+    align-items: center;
     height: 100%;
 }
 
@@ -112,7 +114,7 @@
     display: inline-block;
     padding: 20px;
     color: var(--colour-tertiary);
-    font-size: small;
+    font-size: smaller;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -129,14 +131,23 @@
 }
 /* Nav menu - End */
 
-/* Search - Start */
-/* Search - End */
-
 /* My Apollo - Start */
+#my-apollo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    max-width: 6%;
+    background-color: var(--colour-secondary);
+}
+
+#my-apollo img {
+    max-width: 100%;
+}
 /* My Apollo - End */
 
 /* Apollo-bar - End */
 
+/* Breadcrumbs - Start */
 /* 
  * Breadcrumb styling adapted from
  * https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
@@ -183,4 +194,5 @@ ul.breadcrumb li a:hover {
         display: none;
     }
 }
+/* Breadcrumbs - End */
 /* Apollo page header - End */
