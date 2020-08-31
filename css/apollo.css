@@ -14,6 +14,24 @@
     
     --desktop-icon-height: 5em;
     --mobile-icon-height: 3em;
+    
+    --space-x-tiny:   0.25em;
+    --space-tiny:     0.5em;
+    --space-xx-small: 1em;  
+    --space-x-small:  1.5em;
+    --space-small:    2em;  
+    --space-medium:   3em;
+    --space-large:    4em;  
+    --space-x-large:  5em;  
+    --space-xx-large: 6em;
+
+    --content-margin: 10%;
+}
+
+@media (max-width: 1023px) {
+    * {
+        --content-margin: 5%;
+    }
 }
 
 /* Apollo page header - Start */
@@ -24,8 +42,8 @@
 
 @media (max-width: 1023px) {
     #apollo-header {
-        padding-top: 16px;
-        padding-bottom: 20px;
+        padding-top: var(--space-xx-small);
+        padding-bottom: var(--space-x-small);
     }
 }
 
@@ -37,8 +55,8 @@
 
 #sign-in a {
     margin-right: 12%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: var(--space-x-small);
+    margin-top: var(--space-x-small);
     color: var(--colour-1st);
     text-transform: uppercase;
     font-size: smaller;
@@ -66,15 +84,15 @@
 #apollo-bar {
     background-color: var(--colour-2nd);
     height: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
 }
 
 #apollo-bar-items {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    margin-left: 4px;
+    margin-left: var(--space-tiny);
     background-color: var(--colour-1st);
     white-space: nowrap;
 }
@@ -82,7 +100,7 @@
 /* Hamburger menu - Start */
 #apollo-hamburger {
     display: flex;
-    padding-left: 8px;
+    padding-left: var(--space-xx-small);
     align-items: center;
 }
 
@@ -137,7 +155,7 @@
 #nav-menu li {
     display: inline-block;
     color: var(--colour-3rd);
-    padding: 12px;
+    padding: var(--space-tiny);
     font-size: smaller;
     font-weight: bold;
     text-transform: uppercase;
@@ -183,10 +201,10 @@
  */
 /* Style the list */
 ul.breadcrumb {
-    margin-left: 10%;
-    padding-right: 8px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-left: var(--content-margin);
+    padding-right: var(--space-x-tiny);
+    padding-top: var(--space-xx-small);
+    padding-bottom: var(--space-xx-small);
     list-style: none;
 }
 
@@ -201,7 +219,7 @@ ul.breadcrumb li {
 
 /* Add a slash symbol (/) between each list item */
 ul.breadcrumb li+li:before {
-    padding: 8px;
+    padding: var(--space-x-tiny);
     content: "/\00a0";
 }
 
@@ -229,8 +247,9 @@ ul.breadcrumb li a:hover {
 
 /* Main Content - Start */
 #main-content {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: var(--space-large);
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
 }
 
 /* Main Content - End */
@@ -241,30 +260,35 @@ ul.breadcrumb li a:hover {
 #footer-company {
     display: flex;
     flex-direction: row;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 56px;
+    justify-content: center;
+    padding-top: var(--space-large);
+    padding-left: var(--content-margin);
+    padding-right: var(--content-margin);
+    padding-bottom: var(--space-x-large);
     background-image: linear-gradient(var(--colour-4th), var(--colour-6th));
     color: var(--colour-1st);
     border-top: 4px solid var(--colour-2nd);
     white-space: nowrap;
 }
 
+#footer-company section {
+    flex: 15%;
+}
+
 #footer-company section+section {
-    padding-left: 16px;
+    padding-left: var(--space-small);
 }
 
 #footer-company h2 {
-    padding-bottom: 16px;
+    padding-bottom: var(--space-xx-small);
 }
 
 #footer-company ul {
     list-style: none;
 }
 
-#footer-company li+li {
-    padding-top: 4px;
+#footer-company li+li {    
+    padding-top: var(--space-tiny);
 }
 
 #footer-company a {
@@ -281,7 +305,7 @@ ul.breadcrumb li a:hover {
     padding: 4px;
 }
 
-#newsletter input[type=submit] {
+#newsletter input[type=submit] {    
     border: 2px solid #55657F;
     color: #55657F;
     font-weight: bold;
@@ -300,6 +324,10 @@ ul.breadcrumb li a:hover {
     flex-direction: row;
 }
 
+#connect-icon-bar a+a {
+    padding-left: var(--space-xx-small);
+}
+
 #connect-icon-bar img {
     max-height: 1.5em;
 }
@@ -309,8 +337,10 @@ ul.breadcrumb li a:hover {
 #affiliations {
     display: flex;
     flex-direction: row;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
+    padding-top: var(--space-small);
+    padding-bottom: var(--space-small);
 }
 
 #affiliations section {
@@ -339,17 +369,24 @@ ul.breadcrumb li a:hover {
 
 /* Company Details - Start */
 #company-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     color: var(--colour-5th);
     font-size: smaller;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-top: 0.5px solid var(--colour-5th);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-left: var(content-margin);
+    margin-right: var(content-margin);
+    padding-top: var(--space-medium);
+    padding-bottom: var(--space-medium);
 }
 
 #company-details div {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #company-details p {
@@ -357,7 +394,7 @@ ul.breadcrumb li a:hover {
 }
 
 #company-details p+p {
-    padding:8px;
+    padding-left: var(--space-tiny);
 }
 
 #company-details a {
