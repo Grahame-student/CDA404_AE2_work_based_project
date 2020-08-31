@@ -81,7 +81,7 @@
 }
 
 #apollo-hamburger img {
-    max-width: 5%;
+    max-height: 2em;
 }
 
 /* Hide the hamburger menu if we are in desktop mode */
@@ -97,12 +97,11 @@
 #site-home {
     display: flex;
     align-items: center;
-    max-width: 8%;
     background-color: var(--colour-1st);
 }
 
 #site-home img {
-    max-width: 100%;
+    max-height: 3em;
 }
 /* Site-home - End */
 
@@ -144,12 +143,11 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    max-width: 7%;
     background-color: var(--colour-2nd);
 }
 
 #my-apollo img {
-    max-width: 100%;
+    max-height: 3em;
 }
 /* My Apollo - End */
 
@@ -227,6 +225,7 @@ ul.breadcrumb li a:hover {
     background-image: linear-gradient(var(--colour-4th), var(--colour-6th));
     color: var(--colour-1st);
     border-top: 4px solid var(--colour-2nd);
+    white-space: nowrap;
 }
 
 #footer-company section+section {
@@ -251,6 +250,10 @@ ul.breadcrumb li a:hover {
 }
 
 /* Newsletter - Start */
+#newsletter p {
+    white-space: nowrap;
+}
+
 #newsletter input {
     padding: 4px;
 }
@@ -267,6 +270,15 @@ ul.breadcrumb li a:hover {
 #newsletter input[type=submit]:hover {
     border: 2px solid var(--colour-1st);
     color: var(--colour-1st);    
+}
+
+#connect-icon-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#connect-icon-bar img {
+    max-height: 1.5em;
 }
 /* Footer-Company - End */
 
@@ -309,8 +321,8 @@ ul.breadcrumb li a:hover {
     width: 100%;
     text-align: center;
     border-top: 0.5px solid var(--colour-5th);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 #company-details div {
