@@ -11,6 +11,9 @@
     --colour-4th: #1F375C; /* Dark blue*/
     --colour-5th: gray;
     --colour-6th: #152640; /* Slightly lighter dark blue */
+    
+    --desktop-icon-height: 5em;
+    --mobile-icon-height: 3em;
 }
 
 /* Apollo page header - Start */
@@ -72,12 +75,15 @@
     flex-direction: row;
     align-items: stretch;
     margin-left: 4px;
-    background-color: var(--colour-1st);    
+    background-color: var(--colour-1st);
+    white-space: nowrap;
 }
 
 /* Hamburger menu - Start */
 #apollo-hamburger {
-    display: inline;
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
 }
 
 #apollo-hamburger img {
@@ -101,7 +107,18 @@
 }
 
 #site-home img {
-    max-height: 3em;
+    max-height: var(--desktop-icon-height);
+}
+
+@media (max-width: 1023px) {    
+    #site-home {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    #site-home img {
+        max-height: var(--mobile-icon-height);
+    }
 }
 /* Site-home - End */
 
@@ -147,7 +164,13 @@
 }
 
 #my-apollo img {
-    max-height: 3em;
+    max-height: var(--desktop-icon-height);
+}
+
+@media (max-width: 1023px) {
+    #my-apollo img {
+        max-height: var(--mobile-icon-height);
+    }
 }
 /* My Apollo - End */
 
