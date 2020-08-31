@@ -268,19 +268,22 @@ ul.breadcrumb li a:hover {
     flex-direction: column;
 }
 
-.article-card {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    border: 0.5px solid var(--colour-3rd);
-    padding: var(--space-small);
-}
-
 .article-card+.article-card {
     margin-top: var(--space-xx-small);
 }
 
+.article-card {
+    display: flex;
+    flex-direction: row;
+    padding: var(--space-xx-small);
+}
+
+.article-card h2 {
+    padding-bottom: var(--space-xx-small);
+}
+
 .article-card img {
+    display: flex;
     max-height: 10em;
     box-shadow: 5px 10px 18px #888888;
 }
