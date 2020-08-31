@@ -55,7 +55,7 @@
                 <p>After reaching out to Apollo's end users, several common loop issues were identified that Apollo's system tools can help diagnose, and locate, in less time than traditional debugging methods.</p>
                 <p>These articles give a brief overview on which tools can be used to speed up the diagnosis and location of the most common loop issues. For more in depth training on how to use these tools, register up for one of our free online webinars, using the form below.</p>
                 <div class="card-stack">
-                    <article class="article-card">                
+                    <div class="subject-card">                
                         <a href="earth_faults.html">
                             <img src="images/earth_faults.png" alt="locate earth fault screenshot" />
                         </a>
@@ -63,8 +63,8 @@
                             <h2>Earth Faults</h2>
                             <p>EN54-2 defines an earth fault as an unwanted connection between the earth potential and any part of the control and indicating equipment (CIE), transmission paths to the CIE, or transmission paths between parts of the CIE.</p>
                         </section>
-                    </article>
-                    <article class="article-card">                
+                    </div>
+                    <div class="subject-card">                
                         <a href="double_addresses.html">
                             <img src="images/double_addressing.png" alt="loop overview screenshot" />
                         </a>
@@ -72,26 +72,29 @@
                             <h2>Double Addresses</h2>
                             <p>Double addressing is when the CIE reports two or more addressable devices responding to the same address. This may be the result of multiple devices being set to the same address or as a result of data corruption on the loop.</p>
                         </section>
-                    </article>
-                    <article class="article-card">                
+                    </div>
+                    <div class="subject-card">                
                         <a href="incorrect_product_wiring.html">
-                            <img src="images/incorrect_wiring.png" />
+                            <img src="images/incorrect_wiring.png" alt="Xpert8 base wiring diagram" />
                         </a>
                         <section>
                             <h2>Incorrect Product Wiring</h2>
                             <p>Incorrect product wiring occurs when the product installation guides are not followed. This fault may present itself as a short circuit fault if the loop devices on the system contain built in isolators, as these are polarity sensitive.</p>
                         </section>
-                    </article>
-                    <article class="article-card">                
+                    </div>
+                    <div class="subject-card">                
                         <a href="short_circuits.html">
-                            <img src="images/short_circuit.png" />
+                            <img src="images/short_circuit.png" alt="short circuit detected screenshot" />
                         </a>
                         <section>
                             <h2>Short Circuits</h2>
-                            <p>A short circuit fault is occurs when two or more conductors, of opposite polarity make contact. This may be the result of damaged cable sheathing or incorrectly wired product. They may present as missing devices if there are isolators fitted to the loop.</p>
+                            <p>A short circuit fault occurs when two or more conductors, of opposite polarity make contact. This may be the result of damaged cable sheathing or incorrectly wired product. They may present as missing devices if there are isolators fitted to the loop.</p>
                         </section>
-                    </article>
+                    </div>
                 </div>
+                
+                <form id="register-webinar">
+                </form>
             </div>
             
             <footer id="apollo-footer">
@@ -125,11 +128,12 @@
                             <li>Hear about our product innovations first</li>
                             <li>
                                 <form id="newsletter-subscribe">
-                                <p>
-                                    Email
-                                    <input type="email" placeholder="Enter your email address" name="email_address">
-                                    <input type="submit" name="newsletter-submit" value="Subscribe">
-                                </p>
+                                    <p>
+                                        Email
+                                        <input type="email" placeholder="Enter your email address" name="email_address">
+                                        <input type="submit" name="newsletter-submit" value="Subscribe">
+                                    </p>
+                                </form>
                             </li>
                         </ul>
                     </section>
@@ -143,12 +147,12 @@
                     </section>
                 </div>
                 <div id="affiliations">
-                    <section id="parent-company">
+                    <div id="parent-company">
                         <img src="images/Halma_Endorsement_Line_RGB_Black.png" alt="A Halma Company">
-                    </section>
-                    <section id="certification">
+                    </div>
+                    <div id="certification">
                         <img src="images/lpcb-logos.jpg" alt="LPCB Logos - struck through">
-                    </section>                    
+                    </div>                    
                 </div>
                 <div id="company-details">
                     <div>
