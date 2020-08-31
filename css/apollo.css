@@ -407,6 +407,39 @@ ul.breadcrumb li a:hover {
 #connect-icon-bar img {
     max-height: 1.5em;
 }
+
+@media (max-width: 1023px) {
+    #footer-company {
+        flex-wrap: wrap;
+    }
+
+    #footer-company section+section {
+        padding-left: 0;
+    }
+    
+    #footer-company #quick-links {
+        flex: 40%;
+    }
+    
+    #footer-company #legal {
+        flex: 40%;
+        white-space: initial;
+    }
+    
+    #footer-company #newsletter {
+        flex: 100%;
+        margin-top: var(--space-x-small);
+    }
+    
+    #footer-company #connect {
+        flex: 100%;
+        margin-top: var(--space-x-small);
+    }
+    
+    #connect h2 {
+        display: none;
+    }
+}
 /* Footer-Company - End */
 
 /* affiliations - Start */
