@@ -6,7 +6,7 @@
         <meta name="description" content="Information on Apollo tools that can help diganose common loop faults">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/apollo.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">        <script src="scripts/apollo.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
         <script src="scripts/apollo.js"></script>
     </head>
     
@@ -45,20 +45,52 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Training & Support</a></li>
-                    <li>Troubleshooting Common Loop Problems</li>
+                    <li><a href="index.html">Troubleshooting Common Loop Problems</a></li>
+                    <li>Incorrect Product Wiring</li>
                 </ul> 
             </header>
             
             <div id="main-content">
-                <h1>Troubleshooting Common Loop Problems</h1>
-                <p>Apollo aims to make it faster to complete projects by making it easier to design, test and commission a fire system using innovative product design and powerful tools that leverage the new features within Apollo's products.</p>
-                <p>After reaching out to Apollo's end users, several common loop issues were identified that Apollo's system tools can help diagnose, and locate, in less time than traditional debugging methods.</p>
-                <article class="article-card">
-                    <a href="#">
-                        <img />
-                    </a>
-                    <p>
-                </article>
+                <h1>Troubleshooting Earth Faults</h1>
+                <p></p>
+                <p>Earth faults are notoriously time consuming to locate, especially if there is more than one of them on a fire system.</p>
+
+                <form id="webinar-register">
+                    <h2>Webinar Registration</h2>
+                    <p><span class="required">*</span> Required Field</p>
+                    <fieldset>
+                        <legend>Events</legend>
+                        <p>Pick the event(s) you wish to attend.<span class="required"> *</span></p>
+                        <p><input type="checkbox" name="event_diagnostics" value="02/09/2020 - Test Set Diagnostics"><label for="event_diagnostics">02/09/2020 - Test Set Diagnostics</label></p>
+                        <p><input type="checkbox" name="event_product_ranges" value="16/09/2020 - XP95, Discovery & Soteria"><label for="event_product_ranges">16/09/2020 - XP95, Discovery & Soteria</label></p>
+                        <p><input type="checkbox" name="event_alarmsense" value="30/09/2020 - AlarmSense"><label for="event_alarmsense">30/09/2020 - AlarmSense</label></p>
+                        <p><input type="checkbox" name="event_hazardous" value="14/10/2020 - Fire Detection in Hazardous Areas"><label for="event_hazardous">14/10/2020 - Fire Detection in Hazardous Areas</label></p>
+                        <p><input type="checkbox" name="event_xpander" value="28/10/2020 - XPander"><label for="event_xpander">28/10/2020 - XPander</label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Trainee Details</legend>
+                        <p><label>First Name<span class="required"> *</span></label><input type="text" name="first_name" placeholder="First Name" required></p>
+                        <p><label>Last Name<span class="required"> *</span></label><input type="text" name="last_name" placeholder="Last Name" required></p>
+                        <p><label>Organisation<span class="required"> *</span></label><input type="text" name="organisation" placeholder="Organisation" required></p>
+                        <p><label>Job Title<span class="required"> *</span></label><input type="text" name="job_title" placeholder="Job Title" required></p>
+                        <p><label>Email Address<span class="required"> *</span></label><input type="email" name="webinar_email_address" placeholder="Email Address" required></p>
+                        <div class="option-group">
+                            <p><label>Do you buy directly from Apollo?<span class="required"> *</span></label></p>
+                            <p><input type="radio" name="buy_direct" value="yes" required checked>Yes</p>
+                            <p><input type="radio" name="buy_direct" value="no">No</p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Marketing Consent</legend>
+                        <div class="option-group">
+                            <p><label>Opt-In (By completing the details above you give consent to receive information about this event.  If you would like to also receive marketing emails from Apollo please confirm by selecting yes from the options below)<span class="required"> *</span></label></p>
+                            <p><input type="radio" name="opt_in" value="yes" required>Yes</p>
+                            <p><input type="radio" name="opt_in" value="no" checked>No</p>
+                        </div>
+                    </fieldset>
+                    <p><input type="submit" name="webinar-submit" value="Register Interest"></p>
+                    <p class="required-warning">One or more webinar courses must be selected</p>
+                </form>                
             </div>
             
             <footer id="apollo-footer">
@@ -92,11 +124,12 @@
                             <li>Hear about our product innovations first</li>
                             <li>
                                 <form id="newsletter-subscribe">
-                                <p>
-                                    Email
-                                    <input type="email" placeholder="Enter your email address" name="email_address">
-                                    <input type="submit" name="newsletter-submit" value="Subscribe">
-                                </p>
+                                    <p>
+                                        Email
+                                        <input type="email" placeholder="Enter your email address" name="email_address">
+                                        <input type="submit" name="newsletter-submit" value="Subscribe">
+                                    </p>
+                                </form>
                             </li>
                         </ul>
                     </section>
@@ -110,12 +143,12 @@
                     </section>
                 </div>
                 <div id="affiliations">
-                    <section id="parent-company">
+                    <div id="parent-company">
                         <img src="images/Halma_Endorsement_Line_RGB_Black.png" alt="A Halma Company">
-                    </section>
-                    <section id="certification">
+                    </div>
+                    <div id="certification">
                         <img src="images/lpcb-logos.jpg" alt="LPCB Logos - struck through">
-                    </section>                    
+                    </div>                    
                 </div>
                 <div id="company-details">
                     <div>
