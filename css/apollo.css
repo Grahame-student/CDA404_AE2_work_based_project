@@ -328,6 +328,80 @@ ul.breadcrumb li a:hover {
         margin-left: 0px;
     }
 }
+
+#webinar-register {
+    margin-top: var(--space-xx-large);
+    max-width: 50%;
+}
+
+#webinar-register input {
+    padding: var(--space-tiny);
+}
+
+legend {
+    margin-left: var(--space-x-small);    
+}
+
+#webinar-register .required {
+    color: var(--colour-2nd);
+}
+
+#webinar-register input {
+    margin-left: var(--space-x-small);
+    margin-right: var(--space-x-small);
+}
+
+#webinar-register p {    
+    margin-top: var(--space-tiny);
+    margin-left: var(--space-x-small);
+    padding-bottom: 0px;
+}
+
+#webinar-register p+p {
+    margin-top: var(--space-tiny);
+    margin-bottom: var(--space-tiny);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#webinar-register p>label {
+    display: inline-block;
+    width: 45%;
+    white-space: nowrap;
+}
+
+#webinar-register fieldset+fieldset {
+    margin-top: var(--space-xx-small);
+}
+
+#webinar-register input[type=text] {
+    float: right;
+    width: 45%;
+}
+
+#webinar-register input[type=email] {
+    float: right;
+    width: 45%;
+}
+
+#webinar-register input[type=submit] {
+    border: 2px solid var(--colour-3rd);
+    color: var(--colour-3rd);
+    font-weight: bold;
+    background: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+#webinar-register input[type=submit]:hover {
+    border: 2px solid var(--colour-2nd);
+    color: var(--colour-2nd);
+}
+
+#webinar-register .option-group label {
+    width: 100%;
+    white-space: initial;
+}
 /* Main Content - End */
 
 
@@ -378,7 +452,7 @@ ul.breadcrumb li a:hover {
 }
 
 #newsletter input {
-    padding: 4px;
+    padding: var(--space-tiny);
 }
 
 #newsletter input[type=submit] {    
@@ -486,8 +560,8 @@ ul.breadcrumb li a:hover {
     justify-content: center;
     align-items: center;
     border-top: 0.5px solid var(--colour-5th);
-    margin-left: var(content-margin);
-    margin-right: var(content-margin);
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
     padding-top: var(--space-medium);
     padding-bottom: var(--space-medium);
 }

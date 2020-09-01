@@ -1,9 +1,10 @@
 function setupEvents()
 {
-    document.getElementById("newsletter-subscribe").addEventListener("submit", validate);
+    document.getElementById("newsletter-subscribe").addEventListener("submit", validate_newsletter);
+    document.getElementById("webinar-register").addEventListener("submit", validate_webinar);
 }
 
-function validate(e)
+function validate_newsletter(e)
 {
     const newsletter_subscribe = document.getElementById("newsletter-subscribe");
 
@@ -16,4 +17,10 @@ function validate(e)
     {
         console.log("email field populated, submitting form");        
     }
+}
+
+function validate_webinar(e)
+{
+    console.log("not implemented yet");
+    e.preventDefault();
 }
