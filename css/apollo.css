@@ -334,6 +334,11 @@ ul.breadcrumb li a:hover {
     max-width: 50%;
 }
 
+#webinar-register fieldset {
+    padding: var(--space-x-small);
+    Margin: var(--space-x-small);
+}
+
 #webinar-register input {
     padding: var(--space-tiny);
 }
@@ -401,6 +406,11 @@ legend {
 #webinar-register .option-group label {
     width: 100%;
     white-space: initial;
+}
+
+#webinar-register .required-warning {
+    color: var(--colour-2nd);
+    visibility: hidden;
 }
 /* Main Content - End */
 

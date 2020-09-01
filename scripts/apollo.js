@@ -21,6 +21,30 @@ function validate_newsletter(e)
 
 function validate_webinar(e)
 {
-    console.log("not implemented yet");
-    e.preventDefault();
+    // List of available options
+    const options = ["event_diagnostics","event_product_ranges","event_alarmsense","event_hazardous","event_xpander"];
+    const webinar_booking = document.getElementById("webinar-register");
+
+    var option_selected = false;
+    for(i = 0; i < options.length; i++)
+    {
+        option_selected ||= isSelected(webinar_booking, options[i]);
+    }
+    
+    if (option_selected)
+    {
+        console.log("At least on webinar selected, proceed with booking");
+    }
+    else
+    {
+        console.log("No webinar selected, do not submit booking");        
+        e.preventDefault();
+        
+        document.getElementsByClassName("required-warning")[0].style.visibility = "visible";
+    }        
+}
+
+function isSelected(webform, cb_option)
+{
+    return webform[cb_option].checked;
 }

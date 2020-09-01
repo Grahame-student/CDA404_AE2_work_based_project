@@ -107,16 +107,16 @@
                     </fieldset>
                     <fieldset>
                         <legend>Trainee Details</legend>
-                        <p><label>First Name<span class="required"> *</span></label><input type="text" name="first_name" required></p>
-                        <p><label>Last Name<span class="required"> *</span></label><input type="text" name="last_name" required></p>
+                        <p><label>First Name<span class="required"> *</span></label><input type="text" name="first_name" placeholder="First Name" required></p>
+                        <p><label>Last Name<span class="required"> *</span></label><input type="text" name="last_name" placeholder="Last Name" required></p>
+                        <p><label>Organisation<span class="required"> *</span></label><input type="text" name="organisation" placeholder="Organisation" required></p>
+                        <p><label>Job Title<span class="required"> *</span></label><input type="text" name="job_title" placeholder="Job Title" required></p>
+                        <p><label>Email Address<span class="required"> *</span></label><input type="email" name="webinar_email_address" placeholder="Email Address" required></p>
                         <div class="option-group">
                             <p><label>Do you buy directly from Apollo?<span class="required"> *</span></label></p>
                             <p><input type="radio" name="buy_direct" value="yes" required checked>Yes</p>
                             <p><input type="radio" name="buy_direct" value="no">No</p>
                         </div>
-                        <p><label>Organisation<span class="required"> *</span></label><input type="text" name="organisation" required></p>
-                        <p><label>Job Title<span class="required"> *</span></label><input type="text" name="job_title" required></p>
-                        <p><label>Email Address<span class="required"> *</span></label><input type="email" name="webinar_email_address" required></p>
                     </fieldset>
                     <fieldset>
                         <legend>Marketing Consent</legend>
@@ -127,6 +127,7 @@
                         </div>
                     </fieldset>
                     <p><input type="submit" name="webinar-submit" value="Register Interest"></p>
+                    <p class="required-warning">One or more webinar courses must be selected</p>
                 </form>
             </div>
             
