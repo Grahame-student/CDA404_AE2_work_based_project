@@ -11,7 +11,7 @@ The problem I was trying to solve was to highlight how Apollo's systems tools ca
 These can be found in: https://github.com/Grahame-student/CDA404_AE2_work_based_project/tree/master/docs/wireframes
 All wireframes we constructed using a trial version of Balsamiq.
 
-##Main troubleshooting page
+## Main troubleshooting page
 
 This is what I would consider my main page, as it puts the rest of the pages into context.
 ![](https://github.com/Grahame-student/CDA404_AE2_work_based_project/blob/master/docs/wireframes/desktop/Troubleshooting%20-%20Desktop.png)
@@ -25,7 +25,7 @@ The Apollo website has one main break point between 1023/1024 pixels, therefore 
 
 Both of these layouts are heavily inspired by the main Apollo website.
 
-##Fault pages
+## Fault pages
 
 The individual fault pages are fairly similar and follow this basic layout, again inspired by the Apollo website.
 Desktop view
@@ -65,4 +65,4 @@ As the HTML content of each major element was put in place I then implemented th
 
 On the whole, many of my frustrations came from getting to grips with the nuances of flexboxes, which dispite making me go grey were still *much* easier to use than floating elements!
 
-With the basic styling in place I turned to the scaling and responsive behaviour of the pages. This part almost made me give up, until I moved away from the pixel units, I'd used to get things looking reasonable quickly, to the em unit which made good scaling almost trivial. There's nothing like using the right tool for the job. The only part where I, briefly, deviated from the almighty em unit was for the h1 in the main content. This scaled down nicely, but when scaling up the element rapidly outgrew therest of the content on the page. To combat this I turned to the vw unit, a bit of maths and a @media breakpoint. I knew that at 1024 pixels the layout switched over to desktop mode, I also knew that beyond 56px the h1 element started to look out of place therefore for < 1024px I used a vw value of 5, calculated by vw = (56px / 1024px) x 100 and rounded down. For >= 1024 h1 is set to 3em, which scales very nicely
+With the basic styling in place I turned to the scaling and responsive behaviour of the pages. This part almost made me give up, until I moved away from the pixel units, I'd used to get things looking reasonable quickly, to the em unit which made good scaling almost trivial. There's nothing like using the right tool for the job. The only part where I, briefly, deviated from the almighty em unit was for the h1 in the main content. This scaled down nicely, but when scaling up the element rapidly outgrew therest of the content on the page. To combat this I turned to the vw unit, a bit of maths and a @media breakpoint. I knew that at 1024 pixels the layout switched over to desktop mode, I also knew that beyond 56px the h1 element started to look out of place therefore for < 1024px I used a vw value of 5, calculated by vw = (56px / 1024px) x 100 and rounded down. For >= 1024 h1 is set to 3em, which scales very nicely.
