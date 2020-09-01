@@ -264,6 +264,16 @@ ul.breadcrumb li a:hover {
     padding-bottom: var(--space-x-small);
 }
 
+#main-content .apollo-product {
+    color: var(--colour-2nd);
+    text-decoration: none;
+}
+
+#main-content .apollo-product:hover {
+    color: var(--colour-2nd);
+    text-decoration: underline;
+}
+
 .card-stack {
     display: flex;
     flex-direction: column;
@@ -329,6 +339,7 @@ ul.breadcrumb li a:hover {
     }
 }
 
+/* Webinar registration form - Start */
 #webinar-register {
     margin-top: var(--space-xx-large);
     max-width: 50%;
@@ -412,6 +423,7 @@ legend {
     color: var(--colour-2nd);
     visibility: hidden;
 }
+/* Webinar registration form - End */
 /* Main Content - End */
 
 
